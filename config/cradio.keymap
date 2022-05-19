@@ -59,7 +59,7 @@
 		&mt LSHIFT LT   &mt LCTRL LPAR  &mt LALT LBRC   &mt LGUI LBKT   &kp MINUS 			        &kp EQUAL       &mt RGUI EXCLAMATION    &mt RALT HASH   &mt RCTRL SEMICOLON     &mt RSHIFT BACKSLASH
 		&kp GT          &kp RPAR        &kp RBRC        &kp RBKT        &kp UNDERSCORE              &kp PLUS        &kp AT_SIGN             &kp DOLLAR      &kp COLON               &kp PIPE
                         
-                                                        &kp AMPERSAND   &to 3                       &to 0           &mo ASTERISK 
+                                                        &kp AMPERSAND   &to 3                       &to 0           &kp ASTERISK 
 		>;
 		};	
 		
