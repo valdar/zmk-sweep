@@ -5,6 +5,10 @@
  */
 
 #include <behaviors.dtsi>
+#include <behaviors/mouse_key_press.dtsi>
+#include <behaviors/mouse_move.dtsi>
+#include <behaviors/mouse_scroll.dtsi>
+
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/mouse.h>
@@ -45,8 +49,8 @@
 
        		navigation_layer {
 		bindings = <
-		&kp ESC         &mwh SCROLL_LEFT    &mmv MOVE_UP    &mwh SCROLL_RIGHT   &mwh SCROLL_UP 			&kp PG_UP   &kp HOME    &kp UP           &kp END        &kp DELETE
-		&kp LSHIFT      &mmv MOVE_LEFT      &mmv MOVE_DOWN  &mmv MOVE_RIGHT     &mwh SCROLL_DOWN  		&kp PG_DN   &kp LEFT    &kp DOWN         &kp RIGHT      &kp BACKSPACE 
+		&kp ESC         &msc SCRL_LEFT      &mmv MOVE_UP    &msc SCRL_RIGHT     &msc SCRL_UP 			&kp PG_UP   &kp HOME    &kp UP           &kp END        &kp DELETE
+		&kp LSHIFT      &mmv MOVE_LEFT      &mmv MOVE_DOWN  &mmv MOVE_RIGHT     &msc SCRL_DOWN  		&kp PG_DN   &kp LEFT    &kp DOWN         &kp RIGHT      &kp BACKSPACE 
 		&mt TILDE GRAVE &kp  LCTRL          &kp  LALT       &kp  LGUI           &mkp MCLK   			&kp INS     &kp RC(TAB) &kp LC(LS(TAB))  &kp SYSREQ     &mt DOUBLE_QUOTES SINGLE_QUOTE  
 							    
                                                             &mkp LCLK           &to 2  					&to 0       &mkp RCLK 
@@ -67,7 +71,7 @@
 		bindings = <
         &kp F1      &kp F2      &kp F3      &kp F4      &kp F5 			&kp F6      &kp F7      &kp F8        &kp F9        &kp F10
 		&kp LSHIFT  &kp LCTRL   &kp LALT    &kp LGUI    &none  		    &none       &kp RGUI    &kp RALT      &kp RCTRL     &mt RSHIFT F11 
-		&bt BT_CLR  &bt BT_NXT  &bt BT_PRV  &bootloader &reset   		&reset      &bootloader &bt BT_SEL 0  &bt BT_SEL 1  &kp F12   
+		&bt BT_CLR  &bt BT_NXT  &bt BT_PRV  &bootloader &sys_reset   	&sys_reset  &bootloader &bt BT_SEL 0  &bt BT_SEL 1  &kp F12   
 					 
                                             &none       &to 1  			&to 0       &none 
 		>;
